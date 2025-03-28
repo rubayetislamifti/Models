@@ -23,3 +23,9 @@ Our second model is **ML-NET**. Clone the model from GitHub using this link
 ``pip install torch``
 
 Now change the image folder ``/content/drive/MyDrive/DIP/TD_FixMaps`` with your ``path/to/your/folder``
+
+## TranSalNet-Res
+Our third model is **TranSalNet-Res**. Clone the model from GitHub using this link
+``git clone git@github.com:rubayetislamifti/Models.git``. Then install all requirements. Your IDE will be automatic detect the requirements.
+
+Now change the image folder ``E:/Digital Image Processing/Assignment 3/TranSalNet-Res/Datasets/Saliency_map_TD`` with your ``path/to/your/folder``
