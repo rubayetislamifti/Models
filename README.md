@@ -1,31 +1,95 @@
-# Introduction
-Here we will tell about installation of our models.
+# Model Installation Guide
+
+## Table of Contents
+1. [Introduction](#introduction)
+2. [DeepGazeI](#deepgazei)
+   - [Installation Steps](#installation-steps)
+   - [Update Image Folder Path](#update-image-folder-path)
+   - [Notes](#notes)
+3. [ML-NET](#ml-net)
+   - [Installation Steps](#installation-steps-1)
+   - [Update Image Folder Path](#update-image-folder-path-1)
+4. [TranSalNet-Res](#transalnet-res)
+   - [Installation Steps](#installation-steps-2)
+   - [Update Image Folder Path](#update-image-folder-path-2)
+5. [Conclusion](#conclusion)
+
+## Introduction
+This document provides installation instructions for our models: **DeepGazeI**, **ML-NET**, and **TranSalNet-Res**.
 
 ## DeepGazeI
-**DeepGaze** is our first model. We used here **DeepGazeI** model. Clone the model from GitHub using this link
-``git clone git@github.com:rubayetislamifti/Models.git``. Then install all requirements
+### Installation Steps
+**DeepGazeI** is our first model. To install it, follow these steps:
 
-``pip install scipy``
+1. Clone the repository from GitHub:
+   ```bash
+   git clone git@github.com:rubayetislamifti/Models.git
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install scipy
+   pip install torch
+   pip install opencv-python
+   ```
 
-``pip install torch``
+### Update Image Folder Path
+Replace the following directory:
+```
+I:\Saliency4asd\Saliency4asd\ASD_FixMaps
+```
+with your actual path:
+```
+path/to/your/folder
+```
 
-``pip install opencv-python``
-
-Now change the image folder ``I:\Saliency4asd\Saliency4asd\ASD_FixMaps`` with your ``path/to/your/folder``
-
-### N.B: 
-``deepgazeI.py`` is used for single image only and ``DeepGazeI2.py`` and ``DeepGazeI3.py`` are used for all images in order to TD_FixMaps and ASD_FixMaps.
+### Notes:
+- `deepgazeI.py` is used for processing a single image.
+- `DeepGazeI2.py` and `DeepGazeI3.py` are used for batch processing of images in `TD_FixMaps` and `ASD_FixMaps`.
 
 ## ML-NET
-Our second model is **ML-NET**. Clone the model from GitHub using this link
-``git clone git@github.com:rubayetislamifti/Models.git``. Then install all requirements
+### Installation Steps
+**ML-NET** is our second model. Follow these steps to install it:
 
-``pip install torch``
+1. Clone the repository from GitHub:
+   ```bash
+   git clone git@github.com:rubayetislamifti/Models.git
+   ```
+2. Install the required dependency:
+   ```bash
+   pip install torch
+   ```
 
-Now change the image folder ``/content/drive/MyDrive/DIP/TD_FixMaps`` with your ``path/to/your/folder``
+### Update Image Folder Path
+Replace the following directory:
+```
+/content/drive/MyDrive/DIP/TD_FixMaps
+```
+with your actual path:
+```
+path/to/your/folder
+```
 
 ## TranSalNet-Res
-Our third model is **TranSalNet-Res**. Clone the model from GitHub using this link
-``git clone git@github.com:rubayetislamifti/Models.git``. Then install all requirements. Your IDE will be automatic detect the requirements.
+### Installation Steps
+**TranSalNet-Res** is our third model. Follow these steps to install it:
 
-Now change the image folder ``E:/Digital Image Processing/Assignment 3/TranSalNet-Res/Datasets/Saliency_map_TD`` with your ``path/to/your/folder``
+1. Clone the repository from GitHub:
+   ```bash
+   git clone git@github.com:rubayetislamifti/Models.git
+   ```
+2. Install the required dependencies:
+   Your IDE should automatically detect and install the required dependencies.
+
+### Update Image Folder Path
+Replace the following directory:
+```
+E:/Digital Image Processing/Assignment 3/TranSalNet-Res/Datasets/Saliency_map_TD
+```
+with your actual path:
+```
+path/to/your/folder
+```
+
+## Conclusion
+Following these steps will ensure a smooth installation of all three models. Make sure to update the paths accordingly before running the scripts.
+
